@@ -1,0 +1,8 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: test-nginx:latest
+    ports:
+      - "8080:80"
